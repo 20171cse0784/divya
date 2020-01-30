@@ -1,5 +1,47 @@
-print "hello"
-print"divya"
-bengaluru
-presidency
-560064
+<html dir="ltr">
+	<head>
+		<title>welcome</title>
+	</head>
+	<body bgcolor='pink'>
+		<center>
+		<h1>presidency university</h1>
+		<i><u><h2>bengaluru</h2></u></i>
+		<i><u><h3>karnataka </h3></u></i></center><hr></hr>
+		<em><i><b><p>HELLO</p></b></i></em>
+		<i><u><p>all information is available</p></u></i>
+		<pre>functiontestfunctions</pre>
+
+<br></br>
+		<p align="left">functions</p>
+		<p align="right">time=02:35pm</p>
+		<strike><p align="center">center aligned</p></strike>
+		x<sub>1</sub>+y<sup>2</sup>
+		<p>insert <ins>tag</ins></p>
+		<p>delete <del>tag</del></p><hr></hr>
+		<br><u><i><p>span</p></i></u><hr></br>
+		<p>this is a example <span style="color:blue">spantag</span>
+		and the <span style="color:green">divtag</span>
+alongwithcss</p>
+<a href="https:google.com">
+go to google</a><hr></hr>
+
+languages
+<ul>
+<ol>
+<li>english</li>
+<li>hindi</li>
+<li>telugu</li>
+</ol>
+movies
+<ol>
+<li>movie1<li>
+<li>movie2<li>
+<li>movie3<li>
+<li>movie4<li>
+<li>movie5<li>
+</ol>
+</ul>
+
+		
+	</body>
+</html>
