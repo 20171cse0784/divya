@@ -41,6 +41,44 @@ movies
 <li>movie5</li>
 </ol>
 </ul>
+<p>date:04/02/20</p>
+<ul type="square">
+<li>names</li>
+<ol type="i" start="3">
+<li>divya</li>
+<li>aish</li>
+<li>arhiya</li>
+<li>sameer</l>
+</ol>
+</ul>
+<ul type="square">
+<li>section</li>
+<ol type="a">
+<li>6cse12</li>
+<li>6cse11</li>
+<li>6cse10</li>
+<li>6csec2</li>
+</ol>
+</ul>
+<h4 style="background-color:green;">table</h4>
+<table bgcolor="yellow" border="1" cellpadding="5" cellspacing="5">
+<tr>
+<th>name</th>
+<th>salary</th>
+</tr>
+<tr>
+<td>deeksh</td>
+<td>100000</td>
+</tr>
+<tr>
+<td>shabbir</td>
+<td>50000</td>
+</table>
+</tr>
+
+<hr></hr>
+<p>simple image</p>
+<image src="/home/Sem6B12/Downloads/Link to index.jpeg">
 
 		
 	</body>
