@@ -1,0 +1,25 @@
+h1{
+color:blue;
+}
+p{
+color:red;
+font-size:40px;
+font-style:itallic;
+text-decoration:underline;
+text-transform:uppercase;
+}
+body{
+background-image:url("/home/Sem6B12/Downloads/o63yF7.jpg");
+background-repeat:no-repeat;
+background-attachment:scroll;
+text-shadow:4px 4px 8px blue;
+}
+
+
+#image{
+height:30%;
+width:30%;
+border:;
+box-shadow:4px 4px 8px blue;
+}
+
