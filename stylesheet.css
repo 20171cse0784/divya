@@ -1,0 +1,71 @@
+ body{
+ 	margin: 0;
+ 	padding: 0;
+ 	background: rgb(240, 239, 239); 
+
+
+ }
+ h1{
+ 	margin: 0;
+ 	font-weight: 400;
+ }
+div{
+	background:white;
+	height: 1310px;
+	width: 50rem;
+	padding: 3rem;
+	margin: 1rem auto;
+
+}
+p.ari {
+  font-family: "poppins", sans-serif;
+
+}
+
+.block{
+	width:44.2rem;
+	height:100px;
+	background-color: grey;
+
+
+}
+.one{
+	background-color: grey;
+	padding: 0.1rem;
+	color: white;
+}
+
+
+ .side-bar{
+
+    width:100px;
+    background-color :#F7E0C1;
+    margin-left: 10px;
+    height: 950px;
+
+    float: left;
+ 
+}
+.rightside{
+	width: 490px;
+	height: 950px;
+	background-color:white;
+	float: left;
+}
+table, th,td{
+
+text-align: center;
+background-color:white;
+opacity: 0.8
+height:40px;
+}
+mark{
+	background-color: #F7E0C1;
+	color: black;
+}
+mark1{
+	background-color:#D3D3D3;
+	color: black;
+}
+
+	
