@@ -1,0 +1,250 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aplication Form</title>
+<script>
+function validate()
+{
+ var gender=document.getElementsByName("gender")
+if ( (gender[0].checked == false ) && ( gender[1].checked == false ) ) 
+    {
+        alert ( "Please choose your Gender: Male or Female" ); 
+gender.focus();
+        return false;
+	}
+var sslc=document.getElementById("sslc").value;
+            var puc=document.getElementById("puc").value;
+            var btech=document.getElementById("btech").value;
+            var sslc2=document.getElementById("sslc2").value;
+            var puc2=document.getElementById("puc2").value;
+            var btech2=document.getElementById("btech2").value;
+            if(sslc=="")
+            {
+                if(sslc2==""){
+                    alert("SSLC field is empty");
+                    
+                    return false;
+
+                }
+              
+            } 
+
+        if(puc=="" )
+            {
+                if(puc2==""){
+              alert("PUC field is empty");
+              
+              return false;
+            }
+            }
+if(btech=="")
+            {
+                if(btech2==""){
+              alert("Degree field is empty");
+              
+              return false;
+            }
+            }
+            var YOP=document.getElementById("yb").value;
+            if(YOP<2020 || YOP>2022)
+            {
+                alert("NOT ELIGIBLE TO REGISTER");
+                return false;
+            }
+            var branc=false;
+            if(document.getElementById("CSE").selected)
+            {
+                branc=true;
+            }
+            else if(document.getElementById("ECE").selected){
+
+                branc=true;
+            }
+            else if(document.getElementById("IT").selected){
+
+               branc=true;
+            }
+            else if(document.getElementById("EEE").selected){
+
+              branc=true;
+            }
+            else if(document.getElementById("CIVIL").selected){
+
+             branc=true;
+            }
+            else if(document.getElementById("MECHANICAL").selected){
+
+             branc=true;
+            }
+            else {
+                alert("Please choose your branch");
+                return false;
+            }
+ var skills=false;
+            if(document.getElementById("Java").checked)
+            {
+                skills=true;
+            }
+            if(document.getElementById("C").checked)
+            {
+                skills=true;
+            }
+            if(document.getElementById("C++").checked)
+            {
+                skills=true;
+            }
+            if(document.getElementById("DBMS").checked)
+            {
+                skills=true;
+            }
+            if(document.getElementById("CCNA").checked)
+            {
+                skills=true;
+            }
+            if(document.getElementById("TESTING").checked)
+            {
+                skills=true;
+            }
+            if(skills==false)
+            {
+                alert("Select atleast one technical skill");
+                return false;
+            }
+            alert("SUCCESSFULLY REGISTERED");
+        }
+function validateRegex(Cgpa){
+    var regex = /^[A-Ca-c]+$/;
+    if(regex.test(Cgpa.value) == false){
+   Cgpa.value = "";
+   return false;
+    }
+   else{
+   return true;
+   }
+  }
+</script>
+</head>
+<body>
+<style type="text/css">
+     body{
+    margin: 0;
+    padding: 0;
+    background:#5F9EA0;
+
+ }
+ h2{
+    margin: 0;
+    font-weight: 400;
+ }
+form {
+    width: 490px;
+    background: #fff;
+    padding: 15px 40px 40px;
+    border: 1px solid #ccc;
+    margin: 50px auto 0;
+    border-radius: 5px;
+}
+label {
+    display: block;
+    margin-bottom: 5px
+}
+label i {
+    color: #999;
+    font-size: 80%;
+}
+input, select {
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+.form-inline {
+    border: 1px solid #ccc;
+    padding: 8px 10px 4px;
+    border-radius: 2px;
+}
+.form-inline label, .form-inline input {
+    display: inline-block;
+    width: auto;
+    padding-right: 15px;
+}
+
+</style>
+<center>
+<h1>APPLICATION</h1></center>
+<form name="form" action="" method="POST" onsubmit="return validate()">
+   <h3> Personal Details</h3>
+   First Name:&nbsp;<input type="text" id="Name" Placeholder="First Name" pattern="[A-Za-z]{1,}" required>
+
+<label>Age: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="number" name="Age"  pattern="[*\d]{1,}" placeholder="Enter your age" required>
+
+Gender:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<div class="form-inline">
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
+<input type="radio" name="gender" value="Other"> Other 
+</div>
+
+Mobile no:
+<input type="text" name="mob" pattern="[*\d]{10,}" maxlength="10" required>
+
+Address:&nbsp;&nbsp;&nbsp;
+<input text name="ADDRESS" id="" cols="50" rows="4" maxlength="90" required></text>
+E-mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="E-mail" id="email" placeholder="example@gmail.com "required>
+
+<h3>Upload Section</h3>
+Upload photo:<input type="file"name="photo" required>
+
+Upload Resume:<input type="file"name="Resume"required>
+
+Upload Signature:<input type="file"name="photo"required>
+
+<h3>Marks Section</h3>
+ Class 10<sup>th</sup>: <div class="form-inline"><input type= "text" pattern=[01-99]{2} id="sslc" placeholder="Enter percentage"  maxlength="2"> &nbsp;(OR)
+ CGPA: <input type="text" x id="sslc2" name="sslcCgpa" placeholder="Enter CGPA"  maxlength="1" onchange="if(!validateRegex(form.sslcCgpa)){
+ alert('CGPA should be from A to C')}"> </div>
+ PUC: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="form-inline"><input type= "text" pattern=[01-99]{2} id="puc" placeholder="Enter percentage" > &nbsp;(OR)
+ CGPA:<input type="text" x id="puc2"  name="pucCgpa" placeholder="Enter CGPA" maxlength="1" onchange="if(!validateRegex(form.pucCgpa)){
+ alert('CGPA should be from A to C')}"> </div>
+ Degree:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="form-inline"><input type="text" pattern=[01-99]{2} id="btech" placeholder="Enter percentage"> &nbsp;(OR)
+ CGPA: <input type="text" id="btech2" name="btechCgpa" placeholder="Enter CGPA" maxlength="1" onchange="if(!validateRegex(form.btechCgpa)){
+ alert('CGPA should be from A to C')}" > </div>
+<h3>Specialization</h3>
+<select name="branch" id="">
+            <option value="" selected disabled hidden>Choose here</option>
+            <option value="CSE" id="CSE">CSE</option>
+            <option value="ECE" id="ECE" >ECE</option>
+            <option value="IT" id="IT">IT</option>
+            <option value="EEE" id="EEE">EEE</option>
+            <option value="CIVIL"id="CIVIL" >CIVIL</option>
+            <option value="MECHANICAL" id="MECHANICAL">MECHANICAL</option>
+              </select> 
+<h3>YOP and DOB</h3>
+Date of birth<input type="date" name="Date of birth" placeholder="dd/mm/yy"/ required>
+
+Year of Passing <input type="text" id="yb" name="YOP" required>&nbsp;&nbsp;
+
+<h3>Technical Skills</h3>
+<div class="form-inline">
+<input type="checkbox" id="Java" value="Java"> Java
+
+<input type="checkbox" id="C++" value="C++"> C++
+
+<input type="checkbox" id="C" value="C"> C
+
+<input type="checkbox" id="DBMS" value="DBMS"> DBMS
+
+<input type="checkbox" id="CCNA" value="CCNA"> CCNA
+
+<input type="checkbox" id="TESTING" value="Testing"> Testing
+</div>
+<br><br>
+<center>
+<input type="Submit" value="Submit" style="background-color: #008000" >
+<input type="reset" value="Reset" style="background-color: #808080;" >    </center>
+</form>
+</body>
+</html>

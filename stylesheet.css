@@ -1,20 +1,22 @@
  body{
  	margin: 0;
  	padding: 0;
- 	background: rgb(240, 239, 239); 
-
-
+ 	background:#D3D3D3;
+opacity: 0.8;
  }
  h1{
  	margin: 0;
  	font-weight: 400;
  }
-div{
-	background:white;
-	height: 1310px;
+.bg{
+	background-image: url("https://png.pngtree.com/back_origin_pic/04/52/61/9fade3e79728a35515ac67e7de7bc531.jpg");
+
+	height: 1200px;
 	width: 50rem;
 	padding: 3rem;
 	margin: 1rem auto;
+	border-radius:10px;
+	box-shadow: 10px 10px 5px grey;
 
 }
 p.ari {
@@ -23,9 +25,12 @@ p.ari {
 }
 
 .block{
-	width:44.2rem;
-	height:100px;
-	background-color: grey;
+	width:787px;
+	height:120px;
+	margin-left: 10px;
+	background-image: url("https://www.axisimages.in/wp-content/uploads/Grey-background-for-site11.jpg");
+	color: white;
+
 
 
 }
@@ -38,19 +43,23 @@ p.ari {
 
  .side-bar{
 
-    width:100px;
-    background-color :#F7E0C1;
+    width:200px;
+    background-color :#FFDAB9;
     margin-left: 10px;
-    height: 950px;
-
+    height: 1000px;
+color: black;
     float: left;
+
  
 }
 .rightside{
-	width: 490px;
-	height: 950px;
-	background-color:white;
+	width: 587px;
+	height: 1000px;
+	background-color:#FFFAFA;
 	float: left;
+	opacity: 0.9;
+	box-shadow: 10px 10px 5px #FFDAB9;
+
 }
 table, th,td{
 
@@ -58,6 +67,7 @@ text-align: center;
 background-color:white;
 opacity: 0.8
 height:40px;
+
 }
 mark{
 	background-color: #F7E0C1;
